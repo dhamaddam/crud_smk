@@ -1,0 +1,30 @@
+untuk masukka data baru
+INSERT INTO users (id,nama,umur)
+VALUES (1,'Bambang',26);
+
+untuk masukkan data baru dengan alamat dan jenis_kelamin
+INSERT INTO users (id,nama,umur,alamat,jenis_kelamin)
+VALUES (3,'tukijah',45,'purwokerto','perempuan');
+
+memperbaharui record
+UPDATE users
+SET id=4
+WHERE nama='aisyah putri azzahra';
+
+menghapus data
+DELETE FROM users
+WHERE id=4;
+
+mengurutkan berdasarkan kolom nama
+SELECT * FROM users ORDER BY nama
+
+mengurutkan berdasarkan id
+SELECT * FROM users ORDER BY id
+
+menampilkan record dari kolom dengan memilih value yang berbeda
+SELECT DISTINCT umur 
+FROM users;
+
+menampilkan record dari kata-kata 'ambar' atau kata-kata tertentu
+SELECT * FROM users
+WHERE nama LIKE '%ambar%';
